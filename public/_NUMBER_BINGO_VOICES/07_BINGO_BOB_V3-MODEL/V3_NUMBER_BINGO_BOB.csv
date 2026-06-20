@@ -1,0 +1,84 @@
+Voice Name (Persona),Category,Script Text,FILENAME,Stability,Similarity,Style
+Bingo Bob,PREVIEW AUDIO,"[warmly] Well hello there, everybody![pause] Welcome to the best game in town![pause] I'm your host, Bingo Bob, and I've been callin' these numbers for a long, long time![pause] If you're lookin' for that classic, feel-good bingo experience with a host who knows every trick in the book, you're lookin' right at him![pause] I like to keep things fun, friendly, and movin' at just the right pace so nobody gets left behind![pause] So grab your daubers, keep your eyes on the board, and let's play some bingo!",00__PREVIEW_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,"[playful] Welcome everyone to a great night of Bingo, presented by AMI Entertainment![Short Pause] We're putting the music on hold and bringing you the classic game you know and love![Short Pause] If you need a bingo card, please signal your live host right now![Short Pause] And be sure to ask them what the winning pattern is for this round![Short Pause] Get those daubers ready, here we go!",00_HOST_1_START_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,"[excited] We've called five numbers so far![Short Pause] We're just getting warmed up![Short Pause] There's still plenty of time to join in, so wave down your host for a card!",00_HOST_5_SONGS_IN_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,[playful] That makes fifteen numbers down![Short Pause] The board is starting to fill up nicely![Short Pause] Keep those eyes peeled!,00_HOST_15_SONGS_IN_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,[excited] Twenty-five numbers in the books![Short Pause] Check your boards closely![Short Pause] Someone out there has to be getting close to a win!,00_HOST_25_SONGS_IN_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,[excited] Thirty-five numbers called![Short Pause] We're cruising right along![Short Pause] Who's waiting on just one more?!,00_HOST_35_SONGS_IN_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,"[playful] Fifty-five numbers![Short Pause] The tension is rising in the room![Short Pause] Double check your markers, folks!",00_HOST_55_SONGS_IN_BINGO_BOB,0.8,0.8,0
+Bingo Bob,HOST AUDIO,"[warmly] Well, that's all seventy-five numbers![Short Pause] The hopper is officially empty![Short Pause] Thank you for playing this round with us, powered by AMI Entertainment![Short Pause] Stay tuned, to hear about any more upcomming games of AMI MUSIC BINGO!",00_HOST_75_SONGS_IN_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Next number out of the hopper is… B1!,[Long Pause] ...Kelly's eye!,[Long Pause] B!...Zero One!,[Long Pause] [shouting] ...Final Call:... B1!!...",01_B-1_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Next up is B2!!,[Long Pause] ...One little duck!,[Long Pause] B!...Zero Two!,[Long Pause] [shouting] ...Final Call:... B2!!...",01_B-2_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Looking for B3!!...[Long Pause] Cup of tea!,[Long Pause] B!...Zero Three!,[Long Pause] [shouting] ...Final Call:... B3!!...",01_B-3_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Here is B4!!...[Long Pause] Knock at the door!,[Long Pause] B!...Zero Four!,[Long Pause] [shouting] ...Final Call:... B4!!...",01_B-4_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] We have… B5!!,[Long Pause] B!...Zero Five!,[Long Pause] [shouting] ...Final Call:... B5!!...",01_B-5_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Mark your boards for B6!!,[Long Pause] ...B!...Zero Six!,[Long Pause] [shouting] ...Final Call:... B6!!...",01_B-6_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Moving along to B7!!,[Long Pause] ...Lucky number seven!,[Long Pause] B!...Zero Seven!,[Long Pause] [shouting] ...Final Call:... B7!!...",01_B-7_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Here comes B8!!,[Long Pause] ...Garden gate!,[Long Pause] B!...Zero Eight!,[Long Pause] [shouting] ...Final Call:... B8!!...",01_B-8_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] We have B9!!,[Long Pause] B!...Zero Nine!,[Long Pause] [shouting] ...Final Call:... B9!!...",01_B-9_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Next up is... B10!!,[Long Pause] ...Right on the money!,[Long Pause] B!...One Zero!,[Long Pause] [shouting] ...Final Call:... B10!!...",01_B-10_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Looking for B11!!,[Long Pause] ...Legs eleven!,[Long Pause] B!...One One!,[Long Pause] [shouting] ...Final Call:... B11!!...",01_B-11_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Mark your cards for B12!!,[Long Pause] ...One dozen!,[Long Pause] B!...One Two!,[Long Pause] [shouting] ...Final Call:... B12!!...",01_B-12_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Here is B13!!,[Long Pause] Unlucky for some!,[Long Pause] B!...One Three!,[Long Pause] [shouting] ...Final Call:... B13!!...",01_B-13_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] We have B14!!,[Long Pause] B!...One Four!,[Long Pause] [shouting] ...Final Call:... B14!!...",01_B-14_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Last of the B's, it's B15!!,[Long Pause] B!...One Five!,[Long Pause] [shouting] ...Final Call:... B15!!...",01_B-15_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Moving into the column 2 with I16!!,[Long Pause] ...Sweet sixteen!,[Long Pause] EYE!,[Long Pause] One Six!,[Long Pause] [shouting] ...Final Call:... I16!!...",02_I-16_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Here comes I17!!,[Long Pause] ...Dancing queen!,[Long Pause] EYE!,[Long Pause] One Seven!,[Long Pause] [shouting] ...Final Call:... I17!!...",02_I-17_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Next up is I18!!,[Long Pause] ...EYE!,[Long Pause] One Eight!,[Long Pause] [shouting] ...Final Call:... I18!!...",02_I-18_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Looking for I19!!,[Long Pause] ...EYE!,[Long Pause] One Nine!,[Long Pause] [shouting] ...Final Call:... I19!!...",02_I-19_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] We have I20!!,[Long Pause]... ""I""!,[Long Pause] Two Zero!,[Long Pause] [shouting] ...Final Call:... I20!!...",02_I-20_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Mark your boards for I21!!,[Long Pause] ...Key of the door!,[Long Pause] EYE!,[Long Pause] Two One!,[Long Pause] [shouting] ...Final Call:... I21!!...",02_I-21_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Here is I22!!,[Long Pause] ...Two little ducks!!,[Long Pause] EYE!,[Long Pause] Two Two!,[Long Pause] [shouting] ...Final Call:... I22!!...",02_I-22_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Next out is I23!!,[Long Pause] ...EYE!,[Long Pause] Two Three!,[Long Pause] [shouting] ...Final Call:... I23!!...",02_I-23_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Looking for I24!!,[Long Pause] ...EYE!,[Long Pause] Two Four!,[Long Pause] [shouting] ...Final Call:... I24!!...",02_I-24_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] We have I25!!,[Long Pause] ...EYE!,[Long Pause] Two Five!,[Long Pause] [shouting] ...Final Call:... I25!!...",02_I-25_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Mark your cards for I26!!,[Long Pause] ...EYE!,[Long Pause] Two Six!,[Long Pause] [shouting] ...Final Call:... I26!!...",02_I-26_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Here comes I27!!,[Long Pause] ...EYE!,[Long Pause] Two Seven!,[Long Pause] [shouting] ...Final Call:... I27!!...",02_I-27_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Next up is I28!!,[Long Pause] ...EYE!,[Long Pause] Two Eight!,[Long Pause] [shouting] ...Final Call:... I28!!...",02_I-28_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Looking for I29!!,[Long Pause] ...EYE!,[Long Pause] Two Nine!,[Long Pause] [shouting] ...Final Call:... I29!!...",02_I-29_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Last one in the column is I30!!,[Long Pause] ...Burlington Bertie!,[Long Pause] EYE!,[Long Pause] Three Zero!,[Long Pause] [shouting] ...Final Call:... I30!!...",02_I-30_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Starting the middle column with N31!!,[Long Pause] ...N!...Three One!,[Long Pause] [shouting] ...Final Call:... N31!!...",03_N-31_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Here comes N32!!,[Long Pause] ...N!...Three Two!,[Long Pause] [shouting] ...Final Call:... N32!!...",03_N-32_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Next up is N33!!,[Long Pause] ...All the threes!,[Long Pause] N!...Three Three!,[Long Pause] [shouting] ...Final Call:... N33!!...",03_N-33_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Looking for N34!!,[Long Pause] ...Keep those markers moving!,[Long Pause] N!...Three Four!,[Long Pause] [shouting] ...Final Call:... N34!!...",03_N-34_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] We have N35!!,[Long Pause] ...N!...Three Five!,[Long Pause] [shouting] ...Final Call:... N35!!...",03_N-35_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Mark your boards for N36!!,[Long Pause] ...N!...Three Six!,[Long Pause] [shouting] ...Final Call:... N36!!...",03_N-36_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Here is N37!!,[Long Pause] ...N!...Three Seven!,[Long Pause] [shouting] ...Final Call:... N37!!...",03_N-37_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Next out is N38!!,[Long Pause] ...N!...Three Eight!,[Long Pause] [shouting] ...Final Call:... N38!!...",03_N-38_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Looking for N39!!,[Long Pause] ...N!...Three Nine!,[Long Pause] [shouting] ...Final Call:... N39!!...",03_N-39_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] We have N40!!,[Long Pause] ...Life begins at forty!,[Long Pause] N!...Four Zero!,[Long Pause] [shouting] ...Final Call:... N40!!...",03_N-40_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Mark your cards for N41!!,[Long Pause] ...N!...Four One!,[Long Pause] [shouting] ...Final Call:... N41!!...",03_N-41_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Here comes N42!!,[Long Pause] ...N!...Four Two!,[Long Pause] [shouting] ...Final Call:... N42!!...",03_N-42_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Next up is N43!!,[Long Pause] ...N!...Four Three!,[Long Pause] [shouting] ...Final Call:... N43!!...",03_N-43_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Looking for N44!,[Long Pause] ...All the fours!,[Long Pause] N!...Four Four!,[Long Pause] [shouting] ...Final Call:... N44!!...",03_N-44_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Right in the middle, it's N45!!,[Long Pause] ...N!...Four Five!,[Long Pause] [shouting] ...Final Call:... N45!!...",03_N-45_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Moving to the next letter with G46!!,[Long Pause] ...G!...Four Six!,[Long Pause] [shouting] ...Final Call:... G46!!...",04_G-46_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Here comes G47!!,[Long Pause] ...G!...Four Seven!,[Long Pause] [shouting] ...Final Call:... G47!!...",04_G-47_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Next up is G48!!,[Long Pause] ...G!...Four Eight!,[Long Pause] [shouting] ...Final Call:... G48!!...",04_G-48_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Looking for G49!!,[Long Pause] ...G!...Four Nine!,[Long Pause] [shouting] ...Final Call:... G49!!...",04_G-49_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] We have G50!!,[Long Pause] ...Half a century!,[Long Pause] G!...Five Zero!,[Long Pause] [shouting] ...Final Call:... G50!!...",04_G-50_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Mark your boards for G51!!,[Long Pause] ...G!...Five One!,[Long Pause] [shouting] ...Final Call:... G51!!...",04_G-51_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Here is G52!!,[Long Pause] ...G!...Five Two!,[Long Pause] [shouting] ...Final Call:... G52!!...",04_G-52_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Next out is G53!!,[Long Pause] ...G!...Five Three!,[Long Pause] [shouting] ...Final Call:... G53!!...",04_G-53_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Looking for G54!!,[Long Pause] ...G!...Five Four!,[Long Pause] [shouting] ...Final Call:... G54!!...",04_G-54_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Moving along to G55!!,[Long Pause] ...Double nickels!,[Long Pause] G!...Five Five!,[Long Pause] [shouting] ...Final Call:... G55!!...",04_G-55_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Mark your cards for G56!!,[Long Pause] ...G!...Five Six!,[Long Pause] [shouting] ...Final Call:... G56!!...",04_G-56_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Here comes G57!!,[Long Pause] … 57 Heinz varieties!,[Long Pause] G!...Five Seven!,[Long Pause] [shouting] ...Final Call:... G57!!...",04_G-57_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Next up is G58!!,[Long Pause] ...G!...Five Eight!,[Long Pause] [shouting] ...Final Call:... G58!!...",04_G-58_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Looking for G59!!,[Long Pause] ...G!...Five Nine!,[Long Pause] [shouting] ...Final Call:... G59!!...",04_G-59_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Last one in the G's is G60!!,[Long Pause]... Five dozen exactly!,[Long Pause] G!...Six Zero!,[Long Pause] [shouting] ...Final Call:... G60!!...",04_G-60_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Taking it to the outside with O61!!,[Long Pause] ...O!...Six One!,[Long Pause] [shouting] ...Final Call:... O61!!...",05_O-61_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Here comes O62!!,[Long Pause] ...O!...Six Two!,[Long Pause] [shouting] ...Final Call:... O62!!...",05_O-62_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Next up is O63!!,[Long Pause] ...O!...Six Three!,[Long Pause] [shouting] ...Final Call:... O63!!...",05_O-63_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Looking for O64!!,[Long Pause] ...O!...Six Four!,[Long Pause] [shouting] ...Final Call:... O64!!...",05_O-64_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] We have O65!!,[Long Pause] ...O!...Six Five!,[Long Pause] [shouting] ...Final Call:... O65!!...",05_O-65_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Mark your boards for O66!!,[Long Pause] ...Clickety click!,[Long Pause] O!...Six Six!,[Long Pause] [shouting] ...Final Call:... O66!!...",05_O-66_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Here is O67!!,[Long Pause] ...O!...Six Seven!,[Long Pause] [shouting] ...Final Call:... O67!!...",05_O-67_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Next out is O68!!,[Long Pause] ...O!...Six Eight!,[Long Pause] [shouting] ...Final Call:... O68!!...",05_O-68_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[energetic] Looking for O69!!,[Long Pause] ...Either way up!,[Long Pause] O!...Six Nine!,[Long Pause] [shouting] ...Final Call:... O69!!...",05_O-69_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] We have O70!!,[Long Pause] ...O!...Seven Zero!,[Long Pause] [shouting] ...Final Call:... O70!!...",05_O-70_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Mark your cards for O71!!,[Long Pause] ...O!...Seven One!,[Long Pause] [shouting] ...Final Call:... O71!!...",05_O-71_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[playful] Here comes O72!!,[Long Pause] ...O!...Seven Two!,[Long Pause] [shouting] ...Final Call:... O72!!...",05_O-72_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Next up is O73!!,[Long Pause] ...O!...Seven Three!,[Long Pause] [shouting] ...Final Call:... O73!!...",05_O-73_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[shouting] Looking for O74!!,[Long Pause] ...O!...Seven Four!,[Long Pause] [shouting] ...Final Call:... O74!!...",05_O-74_BINGO_BOB,0.8,0.8,0
+Bingo Bob,NUMBER CALL,"[excited] Here comes O75!!,[Long Pause] …The granddaddy of them all!,[Long Pause] O!...Seven Five!,[Long Pause] [shouting] ...Final Call:... O75!!...",05_O-75_BINGO_BOB,0.8,0.8,0

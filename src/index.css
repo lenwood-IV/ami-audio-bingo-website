@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #020617; /* Dark Slate background */
+  color: white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+/* FORCE BOTTOM NAV VISIBILITY */
+.bottom-nav-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* Force it to the top layer */
+  padding-bottom: env(safe-area-inset-bottom, 20px); /* Fallback to 20px if env fails */
+  background-color: rgb(15 23 42 / 0.95); /* Slate-900 with opacity */
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Force extra scroll space so content isn't hidden behind nav */
+.content-padding-fix {
+  padding-bottom: 160px !important; 
+}
