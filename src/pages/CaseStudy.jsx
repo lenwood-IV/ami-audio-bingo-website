@@ -12,7 +12,8 @@ export default function CaseStudy() {
       </Link>
 
       <div className="mb-12">
-        <h1 className="text-5xl font-black tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-ami-orange to-red-500">
+        {/* ADDED pb-2 to prevent bg-clip-text from cutting off 'g' and 'p', and mb-6 for spacing */}
+        <h1 className="text-5xl font-black tracking-tighter mb-6 pb-2 text-transparent bg-clip-text bg-gradient-to-r from-ami-orange to-red-500 leading-tight">
           Expanding Audio Bingo Experiences
         </h1>
         <h2 className="text-2xl font-bold text-white mb-4">Product R&D Case Study</h2>
