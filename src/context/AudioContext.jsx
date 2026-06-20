@@ -9,7 +9,10 @@ export function AudioProvider({ children }) {
   const [currentTrack, setCurrentTrack] = useState(null);
   const [playlist, setPlaylist] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(-1);
-  const [progress, setProgress] = useState(0); // NEW: Track progress percentage
+  const [progress, setProgress] = useState(0);
+  
+  // NEW: State for hiding/showing the bottom player
+  const [showMiniPlayer, setShowMiniPlayer] = useState(false);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -27,7 +30,6 @@ export function AudioProvider({ children }) {
     const handlePlay = () => setIsPlaying(true);
     const handlePause = () => setIsPlaying(false);
     
-    // NEW: Fire continuously while audio plays
     const handleTimeUpdate = () => {
       if (audio.duration) {
         setProgress((audio.currentTime / audio.duration) * 100);
@@ -54,7 +56,7 @@ export function AudioProvider({ children }) {
     const index = activePlaylist.findIndex(t => t.id === track.id);
     setCurrentIndex(index);
     setCurrentTrack(track);
-    setProgress(0); // Reset progress on new track
+    setProgress(0);
 
     const audio = audioRef.current;
     
@@ -88,6 +90,10 @@ export function AudioProvider({ children }) {
       playTrack(playlist[currentIndex - 1]);
     }
   };
+  
+  const toggleMiniPlayer = () => {
+    setShowMiniPlayer(prev => !prev);
+  };
 
   return (
     <AudioContext.Provider value={{
@@ -95,7 +101,9 @@ export function AudioProvider({ children }) {
       currentTrack,
       playlist,
       currentIndex,
-      progress, // EXPORT PROGRESS
+      progress,
+      showMiniPlayer,
+      toggleMiniPlayer,
       playTrack,
       togglePlayPause,
       nextTrack,

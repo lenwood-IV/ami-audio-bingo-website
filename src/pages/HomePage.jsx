@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { Mic2, Dices, Play } from 'lucide-react';
+import { Mic2, Dices, Play, Info } from 'lucide-react';
 import inventory from '../data/inventory.json';
+import { useAudio } from '../context/AudioContext';
 
 export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialTab = searchParams.get('type') || 'standard_bingo';
   
   const [activeTab, setActiveTab] = useState(initialTab);
+  
+  // Bring in the audio context to control the mini player toggle
+  const { showMiniPlayer, toggleMiniPlayer } = useAudio();
 
-  // Keep state in sync if the URL changes (e.g., clicking the Back button)
   useEffect(() => {
     const typeFromUrl = searchParams.get('type');
     if (typeFromUrl && typeFromUrl !== activeTab) {
@@ -57,11 +60,10 @@ export default function HomePage() {
   return (
     <div className="p-6 pt-12 pb-32">
       <div className="mb-8">
-        <h1 className="text-4xl font-black tracking-tighter mb-2 text-white">Audio Inventory</h1>
+        <h1 className="text-4xl font-black tracking-tighter mb-2 text-white">Audio Bingo Inventory</h1>
         <p className="text-slate-400">Select a game type and character to preview the generated audio.</p>
       </div>
       
-      {/* CATEGORY TOGGLE TABS */}
       <div className="flex space-x-2 p-1 bg-slate-900 rounded-xl border border-white/5 mb-6">
         <button 
           onClick={() => {
@@ -93,14 +95,35 @@ export default function HomePage() {
         </button>
       </div>
 
-      {/* FILTER CONTROLS */}
-      <div className="flex justify-between items-end mb-4 px-1">
-        <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-          {sortedGames.length} {activeTab === 'standard_bingo' ? 'Voices' : 'Games'}
+      {/* NEW: EXPLAINER BLURB */}
+      <div className="bg-slate-900/50 border border-white/5 rounded-xl p-4 mb-6 flex items-start gap-3 shadow-inner">
+        <Info className="text-ami-orange shrink-0 mt-0.5" size={20} />
+        <div className="text-sm text-slate-300 leading-relaxed">
+          {activeTab === 'standard_bingo' ? (
+            <p><strong className="text-white font-bold">Standard Bingo:</strong> Select a virtual host with a distinct style and personality to call a classic, fully-produced game of Bingo. Each host brings their own unique flavor to the numbers.</p>
+          ) : (
+            <p><strong className="text-white font-bold">Trivia Bingo:</strong> Test your crowd's knowledge! Choose a thematic host to guide players through specialized trivia questions where the answers live on their Bingo cards.</p>
+          )}
         </div>
       </div>
 
-      {/* COMPACT INVENTORY GRID */}
+      {/* FILTER CONTROLS & MINI PLAYER TOGGLE */}
+      <div className="flex justify-between items-center mb-4 px-1">
+        <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+          {sortedGames.length} {activeTab === 'standard_bingo' ? 'Voices' : 'Games'}
+        </div>
+        
+        <div className="flex items-center gap-3">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Mini Player</span>
+          <button 
+            onClick={toggleMiniPlayer}
+            className={`w-10 h-5 rounded-full relative transition-colors ${showMiniPlayer ? 'bg-ami-orange' : 'bg-slate-700'}`}
+          >
+            <div className={`w-3 h-3 bg-white rounded-full absolute top-1 transition-all duration-300 ${showMiniPlayer ? 'left-6' : 'left-1'}`} />
+          </button>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3">
         {sortedGames.map((game) => {
           return (
@@ -122,7 +145,6 @@ export default function HomePage() {
               
               <div className="flex flex-col items-end gap-3 relative z-10 shrink-0">
                 
-                {/* SEPARATE MODEL BADGES */}
                 <div className="flex gap-1.5">
                   {[...game.modelsAvailable].sort().map(model => (
                     <span key={model} className={`px-2 py-0.5 rounded text-[9px] font-black tracking-widest shadow-sm ${
@@ -135,7 +157,6 @@ export default function HomePage() {
                   ))}
                 </div>
                 
-                {/* Always-Orange Play Button */}
                 <div className="w-8 h-8 rounded-full bg-gradient-to-br from-ami-orange to-red-600 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-110 group-hover:shadow-orange-500/40 transition-all">
                   <Play size={14} fill="currentColor" className="ml-0.5" />
                 </div>

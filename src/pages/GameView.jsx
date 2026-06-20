@@ -43,20 +43,27 @@ export default function GameView() {
     setPendingPlay(false);
   }, [id, hasV3, hasV2]);
 
+  // Keep script expanded naturally and AUTO-SCROLL as track advances
   useEffect(() => {
-    if (currentTrack) setExpandedTrack(currentTrack.uniqueId);
-  }, [currentTrack?.uniqueId]);
+    if (currentTrack) {
+      setExpandedTrack(currentTrack.uniqueId);
+      
+      if (isPlaying) {
+        setTimeout(() => {
+          const el = document.getElementById(`track-${currentTrack.matchKey.replace(/\s+/g, '-')}`);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 100);
+      }
+    }
+  }, [currentTrack?.uniqueId, isPlaying]);
 
-  // UPDATED: Smooth Scroll Interceptor now forces the track to expand
   useEffect(() => {
     if (location.state?.scrollTo) {
-      
-      // 1. Force the script open if it was manually collapsed
       if (currentTrack) {
         setExpandedTrack(currentTrack.uniqueId);
       }
-
-      // 2. Execute the smooth scroll
       setTimeout(() => {
         const el = document.getElementById(`track-${location.state.scrollTo}`);
         if (el) {
@@ -252,26 +259,27 @@ export default function GameView() {
 
       <CharacterMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} characters={uniqueCharacters} gameType={gameType} currentId={id} />
 
-      <div className="flex justify-between items-center bg-slate-900 border border-white/5 rounded-xl p-4 mb-6 sticky top-4 z-20 shadow-2xl shadow-black/50 backdrop-blur-md">
+      {/* UNSTUCK AND MOBILE-OPTIMIZED ACTION BAR */}
+      <div className="flex justify-between items-center bg-slate-900 border border-white/5 rounded-xl p-3 sm:p-4 mb-6 shadow-xl">
         <div className="flex gap-2">
           <button 
             onClick={() => { setShuffleCount(0); setPendingPlay(true); }} 
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-sm transition-all ${shuffleCount === 0 ? 'bg-white/10 text-white' : 'text-slate-400 hover:bg-white/5'}`}
+            className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg font-bold text-sm transition-all ${shuffleCount === 0 ? 'bg-white/10 text-white' : 'text-slate-400 hover:bg-white/5'}`}
           >
-            <ArrowDownAZ size={16} /> A-Z
+            <ArrowDownAZ size={16} /> <span className="hidden sm:inline">A-Z</span>
           </button>
           
           <button 
             onClick={() => { setShuffleCount(c => c + 1); setPendingPlay(true); }} 
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-sm transition-all ${shuffleCount > 0 ? 'bg-ami-orange text-white' : 'text-slate-400 hover:bg-white/5'}`}
+            className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 rounded-lg font-bold text-sm transition-all ${shuffleCount > 0 ? 'bg-ami-orange text-white' : 'text-slate-400 hover:bg-white/5'}`}
           >
-            <Shuffle size={16} /> Shuffle
+            <Shuffle size={16} /> <span className="hidden sm:inline">Shuffle</span>
           </button>
         </div>
         
         <button 
           onClick={() => playTrack(activePlaylist[0], activePlaylist)}
-          className={`flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-ami-orange to-red-600 text-white font-black text-sm rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all`}
+          className={`flex items-center gap-2 px-4 sm:px-6 py-2 bg-gradient-to-r from-ami-orange to-red-600 text-white font-black text-sm rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all`}
         >
           <Play size={16} fill="currentColor" /> {isCompareMode ? "PLAY ALL (V3)" : "PLAY ALL"}
         </button>
